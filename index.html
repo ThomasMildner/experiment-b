@@ -44,17 +44,10 @@
     </div>
     <script>
         function checkMobileBrowser() {
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                alert("Mobile User");
-                loadMobileHTML();
-            }
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                alert("second case mobile");
-            }
-        }
 
-        function loadMobileHTML() {
-            document.getElementById("content").innerHTML='<object type="text/html" data="mobile.html" ></object>';
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                alert("This website is only optimized for desktop browsers. For best experience please continue with a desktop computer. Thanks!");
+            }
         }
     </script>
 </body>
