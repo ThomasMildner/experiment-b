@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Studies</title>
+    <title>Experiment B</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Story Telling Studies">
     <meta name="Thomas Mildner">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
-
+    <script type="text/javascript" src="js/expLogic.js"></script>
 </head>
 <body onload="checkMobileBrowser()">
     <div class="content">
-        <h1>Thanks for participating in this study!</h1>
-        <div id="main-information">
-            <p class="main-information-column">The research area of this study is Computational Creativity.
-                This research field investigates the phenomenon of creativity in computing machines.
-                The presented project is an approach of computational linguistics, which aims to
-                research on interactive storytelling systems.
-                </p>
-            <p class="main-information-column">This particular part of the research aims to identify the contribution of
-                user interaction in a creative performance. There are no risks involved in taking part in
-                this research study and you can change your mind at any stage and withdraw from the study.</p>
-        </div>
-        <div class="study-buttons">
-            <a class="study-button" id="simple-study-button" href="exp/one.html">
-                <p class="study-button-clicktext">click here to get to</p>
-                <p>EXPERIMENT ONE</p>
-            </a>
-            <a class="study-button" id="interactive-study-button" href="exp/two.html">
-                <p class="study-button-clicktext">click here to get to</p>
-                <p>EXPERIMENT TWO</p>
-            </a>
+        <h1>Experiment  B</h1>
+        <p>To start this experiment, first make sure your browser allows <i>JavaScript</i>. If you have already
+            participated in this or a similar study you cannot take part in this experiment. </br>
+            Confirming, that you are eligible to take part in this study will start the experiment.
+            Once started, please continue with the task until the end.</p>
+        <p>At the end of the experiment there will be a link forwarding you to a Google Form with a set of questions regarding the study.
+            Please take your time filling them out. Thank you very much!
+            </br>Though most browsers work just fine, for best experience we recommend using Google's Chrome.</p>
+        <p>Kind Regards, </br>Thomas</p>
+
+        <div class="confirmation">
+            <div class="confirmation-buttons">
+                <a class="confirmation-button-cancel" href="abort.html">Cancel</a>
+            </div>
+            <div class="confirmation-buttons">
+                <a href="experiment.html">I confirm that I am eligible to take part in this study</a>
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -42,13 +40,13 @@
             <a id="footer-impress" href="impress.html">impress</a>
         </div>
     </div>
-    <script>
-        function checkMobileBrowser() {
-
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-                alert("This website is only optimized for desktop browsers. For best experience please continue with a desktop computer. Thank you!");
-            }
-        }
-    </script>
 </body>
+<script>
+    function checkMobileBrowser() {
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            alert("This website is only optimized for desktop browsers. For best experience please continue with a desktop computer. Thank you!");
+        }
+    }
+</script>
 </html>

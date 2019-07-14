@@ -215,8 +215,8 @@ function injectNameToSection(section) {
 /*   Validation Functions:    */
 /******************************/
 
-const endOfExperiment = "The story is over. Thanks for listening and participating." +
-	"<br><br/>Clicking the link will take you to the Google Sheets Questionnaire." +
+const endOfExperiment = "The story is over. Thank you for listening and participating." +
+	"<br><br/>Clicking the link will take back to the start. You may now go back to the questionnaire." +
 	"<br><br/>Please come back for the second part of the study, this tab will stay open. Thank you!";
 
 // Check if input is valid.

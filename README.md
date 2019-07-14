@@ -1,3 +1,3 @@
-# Experiment B
+# Experiment A
 
-This is version B of the narrator experiment.
+This is version A of the narrator experiment.
