@@ -416,7 +416,9 @@ const utterSimpleText = async text => {
 	let counter = 0;
 	let index;
 	for (index = 0; index < arr.length; ++index) {
-		$("#two-play-button").hide();
+		$("#two-play-button").hide(); 				// Hide play button.
+		$("#back-button").hide(); 					// Hide back button.
+		$("#experiment-flowtext-container").show(); // Show textbox containing story text.
 		//utterElement(arr[index]);
 		const message	= new SpeechSynthesisUtterance(arr[index]);
 		message.voice 	= await chooseVoice();
@@ -449,7 +451,31 @@ const storyText = "What if Edna Krabappel fell in love with Homer Simpson.  Some
 	"married Homer in Springfield and they honeymooned in Springfield. Thereafter Edna and Homer were utterly " +
 	"inseparable; wherever Homer went Edna was sure to follow.";
 
+const storyArr = ["What if Edna Krabappel fell in love with Homer Simpson.  Something clicked inside Edna Krabappel when loveable Homer Simpson came along. So at first, Edna fell deeper in love with Homer than she ever had with Matt Groening. But Homer was bored almost to death by Edna."
+	,"Yet Edna charmed Homer with a sly smile. So Homer started an illicit affair with Marge Simpson. Well, Edna viciously sliced Homer with her sharp-edged ruler. So Homer reported Edna to the police. Well, Edna begged for Homer's forgiveness." 
+	,"So Homer lowered the boom on Edna.Then Marge Simpson went down on bended knee and proposed to Homer. So Homer introduced Marge Simpson to his social circle. But Marge Simpson invited Barney Gumble for a romantic meal. Yet Barney Gumble turned a cold eye to Marge Simpson's entreaties."
+	,"But Marge Simpson harassed Barney Gumble continuously. So Barney Gumble passed information to Homer. We're no longer an item said Homer to Marge Simpson. Forgive me begged Homer of Edna. Then Edna forgave all of Homer's transgressions. After this, Edna went down on bended knee and proposed to Homer."
+	,"Then Homer forged a bond with Edna. So in the end Edna married Homer in Springfield and they honeymooned in Springfield. Thereafter Edna and Homer were utterly inseparable; wherever Homer went Edna was sure to follow."
+	,"The End.</br> Thank you for listening and participating. You may now go back to the questionnaire."
+	];
+
+let storyArrIndex = 0;
+
+window.onload = function() {
+	$("#experiment-flowtext-container").hide();
+	const tmpButton = document.getElementById("experiment-flowtext-button");
+	tmpButton.addEventListener("click", goThroughStory);	
+}
+
+
+function goThroughStory() {
+	setInnerText("experiment-flowtext", storyArr[storyArrIndex]);
+	storyArrIndex++;
+}
+
+
 function simpleNarration() {
+	setInnerText("experiment-explanation", ""); // Hide explanation text.
 	utterSimpleText(storyText);
 }
 

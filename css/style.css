@@ -643,3 +643,25 @@ a {
     margin: 10px 10px 0 0;
     padding: 5px 10px
 }
+
+#experiment-flowtext-button {
+    width: 33%;
+    min-width: 67px;
+    height: 40px;
+    margin: 20px 33%;
+    padding-top: 5px;
+    background-color: #4CB227;
+    border-radius: 7px;
+    border: #029749 solid 1px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+    display: inline-block;
+    font-size: 12pt;
+}
+
+#experiment-flowtext-button:active{
+    background-color: #029749;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Experiment Two</title>
+    <title>Experiment B</title>
     <meta charset="UTF-8">
     <meta name="description" content="Story Telling Studies">
     <meta name="Thomas Mildner">
@@ -15,7 +15,13 @@
 </head>
 <body>
 <div class="content experiment-content">
-    <p>In this experiment, simply listen to the story. </br> Please make sure your browser has JavaScript activated. Once you are finished, please click on the appearing link.</p>
+    <p id="experiment-explanation">In this experiment, simply listen to the story. </br> Please make sure your browser has JavaScript activated. Once you are finished, please click on the appearing link.</p>
+
+    <div id="experiment-flowtext-container">
+        <p id="experiment-flowtext"></p>
+        <button id="experiment-flowtext-button" type="button">Click to Continue</button>
+    </div>
+
     <a id="two-play-button" tabindex="1" onclick="simpleNarration()">
         <svg version="1.1" id="svg-play-button" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
              viewBox="0 0 343.86 343.6" style="enable-background:new 0 0 343.86 343.6;" xml:space="preserve">
