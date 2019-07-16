@@ -452,7 +452,7 @@ const storyText = "What if Edna Krabappel fell in love with Homer Simpson.  Some
 	"inseparable; wherever Homer went Edna was sure to follow.";
 
 const storyArr = ["What if Edna Krabappel fell in love with Homer Simpson.  Something clicked inside Edna Krabappel when loveable Homer Simpson came along. So at first, Edna fell deeper in love with Homer than she ever had with Matt Groening. But Homer was bored almost to death by Edna."
-	,"Yet Edna charmed Homer with a sly smile. So Homer started an illicit affair with Marge Simpson. Well, Edna viciously sliced Homer with her sharp-edged ruler. So Homer reported Edna to the police. Well, Edna begged for Homer's forgiveness." 
+	,"Yet Edna charmed Homer with a sly smile. So Homer started an illicit affair with Marge Simpson. Well, Edna viciously sliced Homer with her sharp-edged ruler. So Homer reported Edna to the police. Well, Edna begged for Homer's forgiveness."
 	,"So Homer lowered the boom on Edna.Then Marge Simpson went down on bended knee and proposed to Homer. So Homer introduced Marge Simpson to his social circle. But Marge Simpson invited Barney Gumble for a romantic meal. Yet Barney Gumble turned a cold eye to Marge Simpson's entreaties."
 	,"But Marge Simpson harassed Barney Gumble continuously. So Barney Gumble passed information to Homer. We're no longer an item said Homer to Marge Simpson. Forgive me begged Homer of Edna. Then Edna forgave all of Homer's transgressions. After this, Edna went down on bended knee and proposed to Homer."
 	,"Then Homer forged a bond with Edna. So in the end Edna married Homer in Springfield and they honeymooned in Springfield. Thereafter Edna and Homer were utterly inseparable; wherever Homer went Edna was sure to follow."
@@ -475,6 +475,7 @@ function goThroughStory() {
 
 
 function simpleNarration() {
+	goThroughStory();
 	setInnerText("experiment-explanation", ""); // Hide explanation text.
 	utterSimpleText(storyText);
 }
