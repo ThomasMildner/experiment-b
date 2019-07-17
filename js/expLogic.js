@@ -482,7 +482,7 @@ function simpleNarration() {
 
 
 function loadFinishMessage() {
-	finishMessage = 'The story has finished. \n Clicking the link will take you to the Google Sheets Questionnaire.';
+	let finishMessage = 'The story has finished. \n Clicking the link will take you to the Google Sheets Questionnaire.';
 	document.getElementById('experiment-two-finish-text').innerText = finishMessage;
 	//document.getElementById('experiment-two-finish-text').contentWindow.location.reload();
 }
