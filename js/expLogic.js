@@ -471,6 +471,9 @@ window.onload = function() {
 function goThroughStory() {
 	setInnerText("experiment-flowtext", storyArr[storyArrIndex]);
 	storyArrIndex++;
+	if (storyArrIndex >= storyArr.length) {
+		$("#experiment-flowtext-button").hide();
+	}
 }
 
 
